@@ -98,3 +98,5 @@ htmlcov/
 # OS
 Thumbs.db
 .DS_Store
+
+data/models/final_spam_model/
