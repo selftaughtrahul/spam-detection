@@ -31,13 +31,17 @@ This launches the web interface at `http://localhost:8501`.
 - **Prediction Engine** (`src/models/predictor.py`): Dynamically loads trained models for inference.
 - **Dashboard** (`dashboard/app.py`): Streamlit-based UI for real-time interaction.
 
-### Models Implemented
-| Model | Type | Feature Extraction | Best For |
-|-------|------|--------------------|----------|
-| **Naive Bayes** | Probabilistic | TF-IDF | Speed |
-| **XGBoost** | Gradient Boosting | TF-IDF | Robustness |
-| **LinearSVC** | SVM | TF-IDF | Balanced Performance |
-| **DistilBERT** | Transformer (DL) | Token Embeddings | Max Accuracy (>99%) |
+### 🤖 Model Performance & Status
+All models have been trained, evaluated, and saved to `data/models/`.
+
+| Model | Type | Accuracy | F1 Score | Status | Best For |
+|-------|------|----------|----------|--------|----------|
+| **Naive Bayes** | Probabilistic | 96.05% | 82.72% | ✅ Ready | ⚡ Real-time Speed |
+| **XGBoost** | Gradient Boosting | 97.49% | 90.32% | ✅ Ready | 🌲 Robustness |
+| **LinearSVC** | SVM | 98.80% | 95.41% | ✅ Ready | ⚖️ Balance |
+| **DistilBERT** | Transformer | **99.16%** | **96.86%** | ✅ Ready | 🧠 Max Accuracy |
+
+> **Note**: DistilBERT achieves the state-of-the-art performance but requires more computational resources for inference.
 
 ## 📁 Directory Structure
 ```
